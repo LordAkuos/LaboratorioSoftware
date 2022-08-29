@@ -1,0 +1,15 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Atividade 01</title>
+    </head>
+    <body>
+        <h1>Data de hoje:</h1>
+        <br>
+        <script type="text/javascript">
+            let data = new Date();
+            let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.write(data.toLocaleDateString('pt-BR', options));
+        </script>
+    </body>
+</html>
