@@ -1,6 +1,11 @@
-let lista = document.getElementById('lista');
+let botao = document.getElementById('botao');
 
-lista.addEventListener('click', function(){
-    let item = document.getElementById('lista').value;
-    
+botao.addEventListener('click', function(){
+    let lista = document.getElementById('lista').value;
+    let o = document.createElement("ol");
+    let l = document.createElement("li");
+    l.appendChild(lista);
+    o.appendChild(l);
+    document.body.appendChild(o);
 });
+
