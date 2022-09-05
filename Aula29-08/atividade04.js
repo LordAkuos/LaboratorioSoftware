@@ -1,11 +1,18 @@
+let lista = new Array();
 let botao = document.getElementById('botao');
+let l, t;
 
 botao.addEventListener('click', function(){
-    let lista = document.getElementById('lista').value;
-    let o = document.createElement("ol");
-    let l = document.createElement("li");
-    l.appendChild(lista);
-    o.appendChild(l);
-    document.body.appendChild(o);
+    lista.push(document.getElementById('lista').value);
+    lista.sort();
+    listar();
 });
 
+function listar(){
+    for(i=0;i<lista.length;i++){
+        l = document.createElement("li");
+        t = document.createTextNode(lista[i]);
+        l.appendChild(t);
+        document.getElementById('minhaLista').appendChild(l);
+    }
+}
