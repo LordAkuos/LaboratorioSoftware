@@ -1,34 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                font-family: sans-serif;
+            }
+            body {
+                width: 50%;
+                max-width: 800px;
+                min-width: 480px;
+                margin: 0 auto;
+            }
+        </style>
         <title>Atividade 05</title>
     </head>
     <body>
+        <h1>Cálculo da idade e valor de um veículo</h1>
+        <br>
+        <br>
         <div class="form">
             <label for="marca" class="label-control">Marca do veículo:</label>
             <input type="text" id="marca" name="marca" class="form-control" required>
             <br>
+            <br>
             <label for="modelo" class="label-control">Modelo:</label>
             <input type="text" id="modelo" name="modelo" class="form-control" required>
+            <br>
             <br>
             <label for="ano" class="label-control">Ano:</label>
             <input type="number" id="ano" class="form-control" required>
             <br>
+            <br>
             <label for="cor" class="label-control">Cor:</label>
             <input type="text" id="cor" name="cor" required>
+            <br>
             <br>
             <label for="km" class="label-control">Quilometragem:</label>
             <input type="number" id="km" name="km">
             <br>
+            <br>
             <label for="valor_fipe">Valor fipe:</label>
             <input type="number" id="valor_fipe" class="form-control">
             <br>
+            <br>
             <button id="calcular">Calcular</button>
         </div>
+        <br>
+        <div id="resultado">
 
-        <script src="atividade05.js"></script>
+        </div>
+
+        <script type="text/javascript" src="atividade05.js"></script>
     </body>
 </html>
