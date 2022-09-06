@@ -1,4 +1,4 @@
-let carro = {
+let Carro = {
     marca: document.getElementById('marca'),
     modelo: document.getElementById('modelo'),
     ano: document.getElementById('ano'),
@@ -22,9 +22,13 @@ let carro = {
             return this.valor_fipe - (this.valor_fipe * (90 / 100));
         }
     }
-}
+};
 
 let botao = document.getElementById('calcular');
 botao.addEventListener('click', function(){
-    
+    let carro = new Carro();
+    let p = document.createElement('p');
+    let t = document.createTextNode("Seu veículo tem " + carro.anosUtilizacao() + "anos de utilização. E seu valor de mercado é R$" + carro.valorMercado());
+    p.appendChild(t);
+    document.getElementById(calcular).appendChild(p);
 });
