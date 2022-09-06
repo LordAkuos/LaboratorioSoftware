@@ -34,5 +34,5 @@ botao.addEventListener('click', function(){
     let p = document.createElement('p');
     let t = document.createTextNode("Seu veículo tem " + carro.getAnosUtilizacao() + "anos de utilização. E seu valor de mercado é R$" + carro.getValorMercado());
     p.appendChild(t);
-    document.getElementById(calcular).appendChild(p);
+    document.getElementById('calcular').appendChild(p);
 });
