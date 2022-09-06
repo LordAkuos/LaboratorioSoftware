@@ -10,6 +10,7 @@ let Carro = {
         if(this.ano < data){
             return data - this.ano;
         }
+        this.setAnosUtilizacao()
     },
     valorMercado(){
         if(this.valor_fipe <= 30000){
@@ -21,14 +22,17 @@ let Carro = {
         if (this.valor_fipe > 50000){
             return this.valor_fipe - (this.valor_fipe * (90 / 100));
         }
+        this.setValorMercado()
     }
 };
 
 let botao = document.getElementById('calcular');
 botao.addEventListener('click', function(){
     let carro = new Carro();
+    //carro.setAnosUtilizacao();
+    //carro.setValorMercado();
     let p = document.createElement('p');
-    let t = document.createTextNode("Seu veículo tem " + carro.anosUtilizacao() + "anos de utilização. E seu valor de mercado é R$" + carro.valorMercado());
+    let t = document.createTextNode("Seu veículo tem " + carro.getAnosUtilizacao() + "anos de utilização. E seu valor de mercado é R$" + carro.getValorMercado());
     p.appendChild(t);
     document.getElementById(calcular).appendChild(p);
 });
