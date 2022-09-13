@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade React 01</title>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function tick(){
+                const element = (
+                    <div>
+                        <h1>Venha estudar na Fatec!</h1>
+                    </div>
+                );
+                let i = 0;
+                if (i < element.length) {
+                    document.getElementById('root').innerHTML += frase.charAt(i);
+                    i++;
+                }
+                ReactDOM.render(element, document.getElementById('root'));
+            }
+            setInterval(tick, 1000);
+            /*let i = 0;
+            let frase = "Venha estudar na Fatec!";
+            let speed = 100;
+            function tick(){
+                if (i < frase.length) {
+                    document.getElementById('teste').innerHTML += frase.charAt(i);
+                    i++;
+                    setTimeout(tick, speed);
+                }
+            } 
+            tick();*/
+        </script>
+    </body>
+</html>
