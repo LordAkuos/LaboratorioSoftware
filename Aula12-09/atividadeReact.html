@@ -12,20 +12,20 @@
     <body>
         <div id="root"></div>
         <script type="text/babel">
+            let texto = "Venha estudar na Fatec!";
+            let espaco = '';
+            let i = 0;
             function tick(){
                 const element = (
-                    <div>
-                        <h1>Venha estudar na Fatec!</h1>
-                    </div>
+                    <h1>{espaco = espaco + texto[i]}</h1>
                 );
-                let i = 0;
-                if (i < element.length) {
-                    document.getElementById('root').innerHTML += frase.charAt(i);
-                    i++;
+                i++;
+                if (i <= texto.length) {
+                    ReactDOM.render(element, document.getElementById('root'));
                 }
-                ReactDOM.render(element, document.getElementById('root'));
+                
             }
-            setInterval(tick, 1000);
+            setInterval(tick, 200);
             /*let i = 0;
             let frase = "Venha estudar na Fatec!";
             let speed = 100;
