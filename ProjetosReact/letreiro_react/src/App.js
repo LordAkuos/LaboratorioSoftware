@@ -6,17 +6,20 @@ function App() {
   let espaco = '';
   let i = 0;
   function tick(){
-      const element = (
-          <h1>{espaco = espaco + texto[i]}</h1>
-      );
-      i++;
-      if (i <= texto.length) {
-          return element;
-      }
-  }
-    return (
-      <div>{ setInterval(tick, 1000)}</div>
+    const element = (
+        <h1>{espaco = espaco + texto[i]}</h1>
     );
+    i++;
+    if (i <= texto.length) {
+        return element;
+    }
+    const interval = setInterval(() => {
+        
+    }, 200);
+  }
+  return (
+    <div>{ () => clearInterval(interval) }</div>
+  );
     //useEffect(() => {
       //const interval = setInterval(() => {
         //console.log('This will run every second!');
