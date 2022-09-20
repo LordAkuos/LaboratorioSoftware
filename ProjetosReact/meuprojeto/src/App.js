@@ -5,19 +5,27 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Fatec-PP</h1>
+        <h2>Venha fazer o vestibular para a Fatec-PP!</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          A Fatec de Presidente Prudente abre as incrições para o vestibular do ano de 2023.
+        </p>
+        <p>
+          Inscreva-se para os cursos disponíveis para os períodos matutino, vespertino e noturno.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.fatecpp.edu.br/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Faça sua inscrição aqui!
         </a>
       </header>
+      <footer className='App'>
+        <p>Fatec de Presidente Prudente.</p>
+        <p>Rua Terezina, 75 - Vila Paulo Roberto</p>
+      </footer>
     </div>
   );
 }
