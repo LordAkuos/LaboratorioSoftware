@@ -15,7 +15,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://www.fatecpp.edu.br/"
+          href="https://www.vestibularfatec.com.br/home/"
           target="_blank"
           rel="noopener noreferrer"
         >
