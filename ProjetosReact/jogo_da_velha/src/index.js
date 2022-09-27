@@ -39,8 +39,14 @@ handleClick(i){
     }
 
     render(){
-        const status = 'Próximo jogador: ' + (this.state.xIsNext ? 'X' : 'O');
-
+        //const status = 'Próximo jogador: ' + (this.state.xIsNext ? 'X' : 'O');
+        const winner = calcularWinner(this.state.squares);
+        let status;
+        if(winner){
+            status = 'Vencedor: ' + winner;
+        } else {
+            status = 'Próximo jogador: ' + (this.state.xIsNext ? 'X' : 'O');
+        }
         return (
             <div>
                 <div className="status">{status}</div>
