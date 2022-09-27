@@ -39,7 +39,7 @@ handleClick(i){
     }
 
     render(){
-        const status = 'Próximo jogador: X';
+        const status = 'Próximo jogador: ' + (this.state.xIsNext ? 'X' : 'O');
 
         return (
             <div>
