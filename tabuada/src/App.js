@@ -9,7 +9,11 @@ import Tabuada from './Tabuada';
 function App() {
   return (
     <div>
-      <Titulo />
+      <Titulo 
+        titulo = "Fatec"
+        texto = "Faculdade de Tecnologia de Presidente Prudente"
+        link = "https://www.fatecpp.edu.br"
+      />
       <Titulo2/>
       <Tabuada numero = {5}/>
     </div>

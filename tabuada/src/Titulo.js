@@ -4,9 +4,9 @@ class Titulo extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            titulo:"Fatec",
-            texto:"Faculdade de Tecnologia de Presidente Prudente",
-            link:"https://www.fatecpp.edu.br"
+            titulo: this.props.titulo,
+            texto: this.props.texto,
+            link: this.props.link
         }
     }
     render(){
