@@ -1,9 +1,23 @@
 import React from 'react';
 
 class Titulo extends React.Component {
-    render(){
-        return <h1>{this.props.texto}</h1>;
+    constructor(props){
+        super(props);
+        this.state = {
+            titulo:"Fatec",
+            texto:"Faculdade de Tecnologia de Presidente Prudente",
+            link:"https://www.fatecpp.edu.br"
+        }
     }
+    render(){
+        return(
+            <div>
+                <h1>{this.state.titulo}</h1>
+                <p>{this.state.texto}</p>
+                <a href={this.state.link}>{this.state.link}</a>    
+            </div>
+        );
+    };
 }
 
 export default Titulo;

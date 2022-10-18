@@ -9,7 +9,7 @@ import Tabuada from './Tabuada';
 function App() {
   return (
     <div>
-      <Titulo texto="Calcule a tabuada"/>
+      <Titulo />
       <Titulo2/>
       <Tabuada numero = {5}/>
     </div>
