@@ -5,12 +5,14 @@ import Titulo2 from './Titulo2';
 import Tabuada from './Tabuada';
 import Cores from './Cores';
 import Mensagem from './Mensagem';
+import Header from './Header';
 
 let n = prompt("Digite um número", "5");
 
 function App() {
   return (
     <div>
+      <Header favcol="Amarelo"/>
       <Cores />
       <Titulo 
         titulo = "Fatec"
