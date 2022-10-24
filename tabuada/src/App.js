@@ -6,6 +6,7 @@ import Tabuada from './Tabuada';
 import Cores from './Cores';
 import Mensagem from './Mensagem';
 import Header from './Header';
+import Aleatorio from './Aleatorio';
 
 let n = prompt("Digite um número", "5");
 
@@ -22,6 +23,7 @@ function App() {
       <Titulo2/>
       <Tabuada numero = {n}/>
       <Mensagem/>
+      <Aleatorio/>
     </div>
   );
 }
