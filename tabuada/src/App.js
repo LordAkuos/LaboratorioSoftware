@@ -4,6 +4,7 @@ import Titulo from './Titulo';
 import Titulo2 from './Titulo2';
 import Tabuada from './Tabuada';
 import Cores from './Cores';
+import Mensagem from './Mensagem';
 
 let n = prompt("Digite um número", "5");
 
@@ -18,6 +19,7 @@ function App() {
       />
       <Titulo2/>
       <Tabuada numero = {n}/>
+      <Mensagem/>
     </div>
   );
 }
