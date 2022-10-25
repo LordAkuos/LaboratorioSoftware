@@ -8,6 +8,7 @@ import Mensagem from './Mensagem';
 import Header from './Header';
 import Aleatorio from './Aleatorio';
 import Texto from './Texto';
+import Container from './Container';
 
 let n = prompt("Digite um número", "5");
 
@@ -25,6 +26,7 @@ function App() {
       <Titulo2/>
       <Tabuada numero = {n}/>
       <Mensagem/>
+      <Container/>
       <Aleatorio/>
     </div>
   );
