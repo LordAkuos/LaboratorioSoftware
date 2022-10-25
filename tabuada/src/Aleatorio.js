@@ -1,8 +1,8 @@
 import React from "react";
 
 class Aleatorio extends React.Component{
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state = {
             value: true,
             contagemDeClicks: 0
@@ -12,7 +12,7 @@ class Aleatorio extends React.Component{
     pickRandom(){
         this.setState({
             value: Math.random() > 0.5,
-            contagemDeClicks: this.state.countOfClicks + 1
+            contagemDeClicks: this.state.contagemDeClicks + 1
         });
     }
     shouldComponentUpdate(nextProps, nextState){

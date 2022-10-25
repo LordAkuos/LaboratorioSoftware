@@ -7,6 +7,7 @@ import Cores from './Cores';
 import Mensagem from './Mensagem';
 import Header from './Header';
 import Aleatorio from './Aleatorio';
+import Texto from './Texto';
 
 let n = prompt("Digite um número", "5");
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <Header favcol="Amarelo"/>
+      <Texto/>
       <Cores />
       <Titulo 
         titulo = "Fatec"
