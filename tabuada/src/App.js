@@ -9,6 +9,7 @@ import Header from './Header';
 import Aleatorio from './Aleatorio';
 import Texto from './Texto';
 import Container from './Container';
+import Contador from './Contador';
 
 let n = prompt("Digite um número", "5");
 
@@ -28,6 +29,7 @@ function App() {
       <Mensagem/>
       <Container/>
       <Aleatorio/>
+      <Contador/>
     </div>
   );
 }
