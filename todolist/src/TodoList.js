@@ -11,7 +11,7 @@ class TodoList extends React.Component{
                 <ul>
                     {this.props.itens.map(
                         item => (<li key={item.id}>{item.text}</li>)
-                        )}
+                    )}
                 </ul>
             </div>
         );
