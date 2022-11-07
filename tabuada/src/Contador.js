@@ -10,6 +10,17 @@ class Contador extends React.Component {
             <div><p>Segundos: {this.state.segundos}</p></div>
         );
     }
+
+    tick(){
+        this.setState({segundos: this.state.segundos + 1});
+    }
+    componentDidMount(){
+        this.interval = setInterval(()=>this.tick(), 2000);
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.interval);
+    }
 }
 
 export default Contador;
