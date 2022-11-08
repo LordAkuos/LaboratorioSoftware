@@ -13,7 +13,21 @@ class Front extends React.Component{
                 <br/>
                 <div style={{backgroudColor: "black"}}>
                     <div>
-                        
+
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button>AC</button>
+                        </div>
+                        <div class="col-3">
+                            <button>+/-</button>
+                        </div>
+                        <div class="col-3">
+                            <button>%</button>
+                        </div>
+                        <div class="col-3">
+                            <button style={{backgroudColor: "white"}}>÷</button>
+                        </div>
                     </div>
                 </div>
             </div>
