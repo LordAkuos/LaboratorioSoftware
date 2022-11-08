@@ -11,22 +11,22 @@ class Front extends React.Component{
                     <h1>Calculadora Personalizada</h1>
                 </div>
                 <br/>
-                <div style={{backgroudColor: "black"}}>
+                <div>
                     <div>
 
                     </div>
-                    <div class="row">
-                        <div class="col-3">
+                    <div>
+                        <div>
                             <button>AC</button>
                         </div>
-                        <div class="col-3">
+                        <div>
                             <button>+/-</button>
                         </div>
-                        <div class="col-3">
+                        <div>
                             <button>%</button>
                         </div>
-                        <div class="col-3">
-                            <button style={{backgroudColor: "white"}}>÷</button>
+                        <div>
+                            <button>÷</button>
                         </div>
                     </div>
                 </div>
