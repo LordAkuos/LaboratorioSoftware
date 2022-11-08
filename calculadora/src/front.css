@@ -1,0 +1,24 @@
+#calculadora{
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#calculadora button{
+   padding-right: 50px;
+   padding-left: 0px;
+}
+
+#calculadora button .zero{
+    padding-right: 100px;
+    border-radius: 50%;
+}
+
+.numero{
+    column-count: 4;
+    justify-content: space-evenly;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
